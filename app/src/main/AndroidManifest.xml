@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pawsupapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PawsupApplication"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.services.SendMessageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.purchase.AddServiceToCart"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity
+            android:name=".ui.services.MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.purchase.PlaceOrder"
+            android:exported="true" />
+        <activity
+            android:name=".ui.purchase.PurchaseSummary"
+            android:exported="true" />
+        <activity
+            android:name=".ui.purchase.Payment"
+            android:exported="true" />
+        <activity
+            android:name=".ui.purchase.PurchaseDetail"
+            android:exported="true" />
+        <activity
+            android:name=".ui.purchase.Checkout"
+            android:exported="true" />
+        <activity
+            android:name=".ui.purchase.addCart"
+            android:exported="true" />
+        <activity
+            android:name=".ui.petcard.cardDeleteChange"
+            android:exported="true" />
+        <activity
+            android:name=".ui.petcard.DeleteCards"
+            android:exported="true" />
+        <activity
+            android:name=".ui.petcard.UpdateCards"
+            android:exported="true" />
+        <activity
+            android:name=".ui.login.ForgotPassActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.ratingReview.RecentServices"
+            android:exported="true" />
+        <activity
+            android:name=".user.AfterLoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".user.SellerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".user.HistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.ratingReview.DisplayReviews"
+            android:exported="true" />
+        <activity
+            android:name=".ui.Contacts.OrderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.Contacts.ContactsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.ratingReview.ReviewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.petcard.PetCards"
+            android:exported="true" />
+        <activity
+            android:name=".ui.petcard.AddCard"
+            android:exported="true" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.products.ChangePrice"
+            android:exported="true" />
+        <activity
+            android:name=".ui.products.ConfirmChange"
+            android:exported="true" />
+        <activity
+            android:name=".ui.products.ProductDetails"
+            android:exported="true" />
+        <activity
+            android:name=".ui.products.ProductsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.seller.AddShop"
+            android:exported="true" />
+        <activity
+            android:name=".ui.seller.CustomizeShop"
+            android:exported="true" />
+        <activity
+            android:name=".ui.seller.RemoveShop"
+            android:exported="true" />
+        <activity
+            android:name=".ui.seller.CustomizeProduct"
+            android:exported="true" />
+        <activity
+            android:name=".ui.services.ServiceDetails"
+            android:exported="true" />
+        <activity
+            android:name=".ui.services.ServiceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.apply.ApplyPage"
+            android:exported="true" />
+        <activity
+            android:name=".ui.services.ServiceAllCategory"
+            android:exported="true" />
+        <activity
+            android:name=".ui.products.ProductAllCategory"
+            android:exported="true" />
+        <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.profile.PhoneActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.profile.EmailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.profile.PasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.profile.SuccessActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/prod_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:transitionName="image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/food1" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        app:layout_constraintStart_toStartOf="@+id/prod_qty"
+        app:layout_constraintTop_toBottomOf="@+id/prod_qty" />
+
+    <TextView
+        android:id="@+id/prod_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:textColor="@android:color/background_dark"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/prod_rating"
+        app:layout_constraintTop_toBottomOf="@+id/prod_rating" />
+
+    <TextView
+        android:id="@+id/prod_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 15.00"
+        android:textColor="#42995C"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+    <!--
+        <TextView
+            android:id="@+id/serv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5"
+            android:textColor="#F2F752"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/serv_image"
+            app:layout_constraintStart_toEndOf="@+id/serv_price"
+            app:layout_constraintTop_toTopOf="@+id/serv_price" />
+    -->
+    <TextView
+        android:id="@+id/prod_name"
+        android:layout_width="197dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Cat Food 1"
+        android:textColor="@android:color/background_dark"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prod_image" />
+
+    <TextView
+        android:id="@+id/prod_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="address"
+        app:layout_constraintStart_toStartOf="@+id/prod_name"
+        app:layout_constraintTop_toBottomOf="@+id/prod_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

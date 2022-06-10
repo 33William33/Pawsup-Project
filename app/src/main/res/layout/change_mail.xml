@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/back3"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="273dp"
+        android:layout_marginBottom="232dp"
+        android:clickable="true"
+        android:onClick="back1"
+        app:layout_constraintBottom_toTopOf="@+id/Old_mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/current_email"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/new_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Old_mail"
+        app:layout_constraintTop_toBottomOf="@+id/Change_email"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/New_mail"
+        android:layout_width="149dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="341dp"
+        android:text="New Email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Old_mail" />
+
+    <TextView
+        android:id="@+id/Old_mail"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="42dp"
+        android:text="Old Email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/New_mail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Change_email" />
+
+    <TextView
+        android:id="@+id/Change_email"
+        android:layout_width="152dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginBottom="483dp"
+        android:text="Change Email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/change_mail"
+        android:layout_width="135dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="259dp"
+        android:onClick="saveMail"
+        android:text="Change"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/New_mail" />
+
+    <EditText
+        android:id="@+id/new_email"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/change_mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/New_mail"
+        app:layout_constraintTop_toBottomOf="@+id/current_email"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Pawsup Application</string>
+    <color name="peach">#FFE5B4</color>
+    <color name="turquoise">#40E0D0</color>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome! "</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="register_prompt">Need an account? Click Register.</string>
+    <string name="action_register">Register</string>
+
+    <string name="title_activity_add_card">AddCard</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="registration_success">Account Created!</string>
+    <string name="apply">Apply to be providers</string>
+    <string name="email">Enter Email Address</string>
+    <string name="product_name">Enter Product Name</string>
+    <string name="product_quantity">Enter Product Quantity</string>
+    <string name="product_price">Enter Product Price</string>
+    <string name="product_picture">Enter Product Picture Address</string>
+    <string name="add_shop_button">Add Product to Shop</string>
+    <string name="service_name">Enter Service Name</string>
+    <string name="service_address">Enter Service Address</string>
+    <string name="service_desc">Enter Service Description</string>
+    <string name="service_price">Enter Service Price</string>
+    <string name="service_picture">Enter Service Picture Address</string>
+    <string name="edit_product">Enter Product ID you want to edit</string>
+    <string name="admin">Seller Page</string>
+    <string name="add_shop">Add Service</string>
+    <string name="edit_shop">Customize Shop</string>
+    <string name="remove_shop">Remove Service</string>
+    <string name="edit_price">Edit Price</string>
+    <string name="confirmation_message">Are you sure you want to go through with this change?</string>
+    <string name="Confirm">Confirm</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Log">Transaction Summary</string>
+    <string name="Reset_password_prompt">Enter your email address and we’ll send you a recovery link.</string>
+    <string name="profile">Profile</string>
+    <string name="activity">Activities</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_product">Products</string>
+    <string name="action_service">Services</string>
+    <string name="petcards">Petcards</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="checkout_prompt">Your current total is:</string>
+    <string name="checkout_prompt_2">Proceed to checkout?</string>
+    <string name="checkout">Checkout</string>
+    <string name="order_details">Order Details</string>
+    <string name="payment">Payment</string>
+    <string name="payment_prompt">How do you wish to pay?</string>
+    <string name="cash">Pay by Cash.</string>
+    <string name="credit">Pay by Credit.</string>
+    <string name="payment_note">Note: If you choose to pay in cash, you will make your payment in person when the product or service is provided to you. In this case leave the information below blank. If you wish to pay by credit then please fill out the infomation below.</string>
+    <string name="card_number">Card Number (16-digits, no space or hyphen)</string>
+    <string name="security_code">CVV (XXX)</string>
+    <string name="place_order">Place Order</string>
+    <string name="shopping_cart">Your Shopping Cart</string>
+    <string name="your_info">Your Information</string>
+    <string name="item_info">Order Information</string>
+    <string name="pay_info">Payment Information</string>
+    <string name="confirm_info">Confirm the below information linked to your account.</string>
+    <string name="add_cart_confirm_prompt">Are you sure you want to add the item(s) to your cart?</string>
+    <string name="place_order_confirm_prompt">Are you sure you want to place the order? You cannot go back from this action.</string>
+
+</resources>

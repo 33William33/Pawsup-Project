@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/peach"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="303dp"
+        android:layout_marginBottom="103dp"
+        android:clickable="true"
+        android:onClick="back1"
+        app:layout_constraintBottom_toTopOf="@+id/Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="140dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="37dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/textButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Phone"
+        app:layout_constraintTop_toBottomOf="@+id/emailAddress" />
+
+    <TextView
+        android:id="@+id/emailAddress"
+        android:layout_width="180dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="26dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/phoneNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/displayName" />
+
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="140dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="21dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/emailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Name"
+        app:layout_constraintTop_toBottomOf="@+id/contactText" />
+
+    <TextView
+        android:id="@+id/Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="38dp"
+        android:text="Phone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/emailNow"
+        app:layout_constraintEnd_toStartOf="@+id/phoneNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="25dp"
+        android:text="Email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/Phone"
+        app:layout_constraintEnd_toStartOf="@+id/emailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+    <TextView
+        android:id="@+id/contactText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="76dp"
+        android:text="Contact"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/displayName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="214dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="21dp"
+        android:text="Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toStartOf="@+id/displayName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/textButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="297dp"
+        android:text="Text"
+        android:backgroundTint="#F870C3BC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/callButton"
+        app:layout_constraintStart_toEndOf="@+id/emailNow"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumber" />
+
+    <Button
+        android:id="@+id/emailNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginBottom="298dp"
+        android:backgroundTint="#F870C3BC"
+        android:text="Email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Phone" />
+
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="74dp"
+        android:backgroundTint="#F870C3BC"
+        android:text="Call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textButton"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6DFBD">
+
+    <Button
+        android:id="@+id/loginActivityButton"
+        android:layout_width="118dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="76dp"
+        android:onClick="goToLogin"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/productsActivityButton"
+        android:layout_width="119dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:onClick="goToProducts"
+        android:text="Products"
+        app:layout_constraintEnd_toEndOf="@+id/loginActivityButton"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/loginActivityButton"
+        app:layout_constraintTop_toBottomOf="@+id/loginActivityButton" />
+
+    <Button
+        android:id="@+id/servicesActivityButton"
+        android:layout_width="116dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:onClick="goToServices"
+        android:text="Services"
+        app:layout_constraintEnd_toEndOf="@+id/productsActivityButton"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="@+id/productsActivityButton"
+        app:layout_constraintTop_toBottomOf="@+id/productsActivityButton" />
+
+    <Button
+        android:id="@+id/goToReview"
+        android:layout_width="117dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:onClick="goToReview"
+        android:text="Review"
+        app:layout_constraintEnd_toEndOf="@+id/servicesActivityButton"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="@+id/servicesActivityButton"
+        app:layout_constraintTop_toBottomOf="@+id/servicesActivityButton" />
+
+    <Button
+        android:id="@+id/ChangePriceButton"
+        android:layout_width="119dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:onClick="goToPriceChange"
+        android:text="@string/edit_price"
+        app:layout_constraintEnd_toEndOf="@+id/goToReview"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/goToReview"
+        app:layout_constraintTop_toBottomOf="@+id/goToReview" />
+
+    <Button
+        android:id="@+id/setPriceButton"
+        android:layout_width="118dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:onClick="goToPriceChange"
+        android:text="Set Price"
+        app:layout_constraintEnd_toEndOf="@+id/ChangePriceButton"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/ChangePriceButton"
+        app:layout_constraintTop_toBottomOf="@+id/ChangePriceButton" />
+
+    <Button
+        android:id="@+id/apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="applyProvider"
+        android:text="@string/apply"
+        app:layout_constraintEnd_toEndOf="@+id/setPriceButton"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="@+id/setPriceButton"
+        app:layout_constraintTop_toBottomOf="@+id/setPriceButton" />
+
+    <Button
+        android:id="@+id/Orders"
+        android:layout_width="123dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="1dp"
+        android:onClick="displayOrder"
+        android:text="Orders"
+        app:layout_constraintBottom_toTopOf="@+id/goToReview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/servicesActivityButton"
+        app:layout_constraintVertical_bias="0.163" />
+</androidx.constraintlayout.widget.ConstraintLayout>

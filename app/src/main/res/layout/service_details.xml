@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.services.ServiceDetails">
+
+    <ImageView
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cart_black" />
+
+    <ImageView
+        android:id="@+id/back_service2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:text="Service Details"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/back_service2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/back_service2" />
+
+    <ImageView
+        android:id="@+id/big_image_service"
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_service2"
+        app:srcCompat="@drawable/food1" />
+
+    <TextView
+        android:id="@+id/serviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/big_image_service" />
+
+    <TextView
+        android:id="@+id/servDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="272dp"
+        android:fontFamily="@font/open_sans_light"
+        android:text="prodDesc"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/serviceName"
+        app:layout_constraintTop_toBottomOf="@+id/serviceName" />
+
+    <Button
+        android:id="@+id/button_service"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/buy_now_bg"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Add To Cart"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/big_image_service"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/servPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/servDesc"
+        app:layout_constraintTop_toBottomOf="@+id/servDesc" />
+
+    <TextView
+        android:id="@+id/address_serviceDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/open_sans_light"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/servPrice"
+        app:layout_constraintTop_toBottomOf="@+id/servPrice" />
+
+    <Button
+        android:id="@+id/Reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="193dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="reviews"
+        android:text="Reviews"
+        app:layout_constraintBottom_toTopOf="@+id/button_service"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/location2"
+        app:layout_constraintTop_toBottomOf="@+id/big_image_service" />
+
+    <Button
+        android:id="@+id/location2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginBottom="13dp"
+        android:onClick="location"
+        android:text="Location"
+        app:layout_constraintBottom_toTopOf="@+id/button_service"
+        app:layout_constraintEnd_toStartOf="@+id/Reviews"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/big_image_service" />
+        android:layout_marginEnd="133dp"
+        android:layout_marginTop="8dp"
+        android:onClick="location"
+        android:text="Location"
+        app:layout_constraintStart_toStartOf="@+id/address_serviceDetail"
+        app:layout_constraintTop_toBottomOf="@+id/address_serviceDetail"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <Button
+        android:id="@+id/contactProviderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="goToContact"
+        android:text="Contact"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/big_image_service"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

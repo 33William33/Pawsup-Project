@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="inputParam7" type="id" />
+    <item name="textInput6" type="id" />
+    <item name="textInput5" type="id" />
+    <item name="textInput4" type="id" />
+    <item name="inputParam5" type="id" />
+    <item name="inputPar1" type="id" />
+    <item name="inputParam2" type="id" />
+    <item name="textInput1" type="id" />
+    <item name="inputParam3" type="id" />
+    <item name="textInput2" type="id" />
+    <item name="inputParam4" type="id" />
+    <item name="textInput3" type="id" />
+    <item name="inputParam6" type="id" />
+    <item name="textInput7" type="id" />
+    <item name="creator" type="id" />
+    <item name="viewer" type="id" />
+    <item name="imageView2" type="id" />
+</resources>

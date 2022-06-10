@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"9af603a7b1194410b1a39ad8c50fb391","collectionName":"Pet_Cards","type":"collection"}

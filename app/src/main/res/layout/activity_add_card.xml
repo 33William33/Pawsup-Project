@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6DFBD"
+    tools:context=".ui.petcard.AddCard">
+
+    <TextView
+        android:id="@+id/inputParam7"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Picture:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInput6" />
+
+    <EditText
+        android:id="@+id/textInput5"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputParam3"
+        app:layout_constraintTop_toBottomOf="@+id/textInput4" />
+
+    <TextView
+        android:id="@+id/inputPar1"
+        android:layout_width="66dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Name:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/inputParam2"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Gender(M/F):"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInput1" />
+
+    <TextView
+        android:id="@+id/inputParam3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Neutered or Spayed(Y/N):"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInput2" />
+
+    <TextView
+        android:id="@+id/inputParam4"
+        android:layout_width="62dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Type:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInput3" />
+
+    <EditText
+        android:id="@+id/textInput4"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputParam3"
+        app:layout_constraintTop_toBottomOf="@+id/textInput3" />
+
+    <TextView
+        android:id="@+id/inputParam5"
+        android:layout_width="66dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Weight:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInput4" />
+
+    <TextView
+        android:id="@+id/inputParam6"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Information:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInput5" />
+
+    <EditText
+        android:id="@+id/textInput6"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputParam3"
+        app:layout_constraintTop_toBottomOf="@+id/textInput5" />
+
+    <EditText
+        android:id="@+id/textInput7"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputParam3"
+        app:layout_constraintTop_toBottomOf="@+id/textInput6" />
+
+    <EditText
+        android:id="@+id/textInput1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputParam3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textInput2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputParam3"
+        app:layout_constraintTop_toBottomOf="@+id/textInput1" />
+
+    <EditText
+        android:id="@+id/textInput3"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputParam3"
+        app:layout_constraintTop_toBottomOf="@+id/textInput2" />
+
+    <Button
+        android:id="@+id/creator"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginBottom="152dp"
+        android:backgroundTint="#F870C3BC"
+        android:onClick="createPetCard"
+        android:text="Create Pet Card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/viewer"
+        android:layout_width="183dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#F870C3BC"
+        android:onClick="viewPetCards"
+        android:text="View Pet Cards"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:maxHeight="100px"
+        android:maxWidth="100px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInput7"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="183dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#F870C3BC"
+        android:onClick="viewUpdateCards"
+        android:text="UPDATE PET CARDS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

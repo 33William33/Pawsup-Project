@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      A custom setting for rating bar learnt from https://hackernoon.com/how-to-customize-ratingbar-component-in-android-gf1h3u0d
+      -->
+    <style name="OrangeStars" parent="Widget.AppCompat.RatingBar">
+        
+        <item name="android:progressDrawable">@drawable/stars</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">50dip</item>
+    </style>
+</resources>
